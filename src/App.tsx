@@ -77,6 +77,19 @@ export function App() {
 
           <form className="space-y-6">
             <div className="space-y-2">
+                <Label>Prompt</Label>
+                <Select>
+                  <SelectTrigger>
+                    <SelectValue placeholder="selecione um prompt..." />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="title">Título do Youtube</SelectItem>
+                    <SelectItem value="description">Descrição do Youtube</SelectItem>
+                  </SelectContent>
+                </Select>
+              </div>
+
+            <div className="space-y-2">
               <Label>Modelo</Label>
               
               <Select disabled defaultValue="gpt3.5">

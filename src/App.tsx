@@ -12,9 +12,9 @@ export function App() {
           <span className="text-sm text-muted-foreground">
             Desenvolvido com inteligência artificial
           </span>
-          
-          <Separator orientation="vertical" className="h-6" />
 
+          <Separator orientation="vertical" className="h-6" />
+          
           <Button variant="outline">
             <Github className="w-4 h-4 mr-2" />
             Github

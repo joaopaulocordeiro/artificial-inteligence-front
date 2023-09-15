@@ -62,7 +62,7 @@ export function VideoInputForm() {
         return audioFile
     }
 
-    function handleUploadVideo(event: FormEvent<HTMLFormElement>) {
+    async function handleUploadVideo(event: FormEvent<HTMLFormElement>) {
         event.preventDefault()
 
         const prompt = promptInputRef.current?.value
@@ -73,8 +73,8 @@ export function VideoInputForm() {
 
         // converter o video em audio
 
-
-
+        const audioFile = await convertVideoToAudio(videoFile)
+        console.log(audioFile)
     }
 
     const previewURL = useMemo(() => {

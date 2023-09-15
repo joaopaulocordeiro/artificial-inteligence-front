@@ -14,7 +14,7 @@ export async function getFFmpeg() {
 
     ffmpeg = new FFmpeg()
 
-    if(ffmpeg.loaded) {
+    if(!ffmpeg.loaded) {
         await ffmpeg.load({
             coreURL,
             wasmURL,
